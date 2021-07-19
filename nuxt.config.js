@@ -28,7 +28,11 @@ export default {
       {name : 'twitter:site', content : '@kmly267'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css'
+      },
     ]
   },
 
@@ -58,7 +62,16 @@ export default {
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    markdown: {
+      remarkPlugins: [
+        'remark-math'
+      ],
+      rehypePlugins: [
+        'rehype-katex'
+      ]
+    }
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

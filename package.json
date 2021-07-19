@@ -17,6 +17,8 @@
     "moment": "^2.29.1",
     "node-sass": "^5.0.0",
     "nuxt": "^2.14.6",
+    "rehype-katex": "^5.0.0",
+    "remark-math": "^4.0.0",
     "sass-loader": "^10.1.0"
   },
   "devDependencies": {
