@@ -53,4 +53,11 @@ export default{
   font-weight: bolder;
   padding-bottom: 5px 0px;
 }
+
+.nuxt-content blockquote{
+  position:relative;
+  border-left:3px solid rgb(99, 179, 237);
+  padding-left:10px;
+  margin: 10px 0px 10px 20px; 
+}
 </style>
