@@ -21,21 +21,25 @@ export default{
   margin: 20px 0px;
   line-height: 3.0rem;
   font-size: 2.0rem;
+  font-weight: 700;
 }
 .nuxt-content h2 {
-  border-bottom: solid 2px rgba(99, 179, 237, var(--text-opacity));
   margin: 20px 0px;
   line-height: 3.0rem;
+  font-weight: 700;
   font-size: 1.5rem;
 }
 
 .nuxt-content h3{
-  border-bottom: solid 0.5px grey;
   margin: 20px 0px;
+  font-weight: 700;
 }
 
 .nuxt-content p{
-  line-height: 2em;
+  line-height: 2.5em;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 3em;
 }
 
 .nuxt-content li{
