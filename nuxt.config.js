@@ -1,8 +1,13 @@
+const environment = process.env.NODE_ENV || 'local'
+const env = require(`./env/${environment}.ts`)
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
   mode: 'universal',
   // Global page headers (https://go.nuxtjs.dev/config-head)
+  router: {
+    base: env.BASE_URL  
+  },
   head: {
     htmlAttrs: {
       lang: 'ja',
@@ -28,7 +33,7 @@ export default {
       {name : 'twitter:site', content : '@kmly267'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '${env.BASE_URL}favicon.png' },
       {
         rel: 'stylesheet',
         href: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css'
