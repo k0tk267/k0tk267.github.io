@@ -1,3 +1,3 @@
 module.exports = {
-  BASE_URL: '/mylog/'
+  BASE_URL: '/kmly267.githu.io/'
 }
