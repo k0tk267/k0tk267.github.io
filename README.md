@@ -1,12 +1,12 @@
-# mylog
+# kmly267.github.io
 
 ## Build Setup
 
 ```
-docker-compose up -d
-docker-compose exec web sh
+make run
+make enter
 ```
-then enter the continer
+after entering the container
 ```
 yarn install(for the first time only)
 yarn dev

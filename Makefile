@@ -1,7 +1,10 @@
-.PHONY: in exec
+.PHONY: run down enter
 
-in:
-	docker-compose run --rm web sh
+run:
+	docker-compose up -d
 
-exec:
+down:
+	docker-compose down
+
+enter:
 	docker-compose exec web sh

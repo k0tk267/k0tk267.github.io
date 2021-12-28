@@ -1,8 +1,13 @@
-FROM node:15.5-alpine
+FROM node:16-alpine
 ENV LANG=C.UTF-8 TZ=Asia/Tokyo
 WORKDIR /app
 RUN apk update
 # COPY ./package*.json ./
+# ENV PYTHONUNBUFFERED=1
+RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
+RUN apk add make
+# RUN python3 -m ensurepip
+# RUN pip3 install --no-cache --upgrade pip setuptools
 RUN yarn add -D sass-loader \
                 node-sass
 RUN yarn add moment remark-math rehype-katex cross-env
