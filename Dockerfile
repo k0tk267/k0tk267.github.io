@@ -9,7 +9,7 @@ RUN apk add make
 # RUN python3 -m ensurepip
 # RUN pip3 install --no-cache --upgrade pip setuptools
 RUN yarn add -D sass-loader \
-                node-sass
+                node-sass@6.0.1
 RUN yarn add moment remark-math rehype-katex cross-env
 RUN yarn install
 COPY ./ .

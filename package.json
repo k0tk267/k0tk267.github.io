@@ -16,7 +16,7 @@
     "core-js": "^3.6.5",
     "cross-env": "^7.0.3",
     "moment": "^2.29.1",
-    "node-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
     "nuxt": "^2.14.6",
     "rehype-katex": "^5.0.0",
     "remark-math": "^4.0.0",
