@@ -35,7 +35,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `https://km1y.com/posts/${this.post.id}`
+          content: `https://kmly267.github.io/posts/${this.post.id}`
         },
         {
           hid: 'og:title',

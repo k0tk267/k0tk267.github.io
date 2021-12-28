@@ -2,10 +2,10 @@
 <footer class="text-gray-400 bg-gray-900 body-font">
   <div class="origin-container px-5 py-8 flex items-center sm:flex-row flex-col">
     <nuxt-link to="/" class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-      <span class="ml-3 text-xl">km1y.com</span>
+      <span class="ml-3 text-xl">kmly267.github.io</span>
     </nuxt-link>
     <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2020 
-      <a href="https://twitter.com/kmly267" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@km1y</a>
+      <a href="https://twitter.com/kmly267" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@kmly267</a>
     </p>
     <!-- <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
       <a class="text-gray-400">
