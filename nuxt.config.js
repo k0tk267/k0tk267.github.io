@@ -13,24 +13,24 @@ export default {
       lang: 'ja',
       prefix: 'og: http://ogp.me/ns#'
     },
-    title: 'kmly267.github.io',
+    title: 'k0tk267.github.io',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'kmlyの活動ログ' },
-      {property : 'og:url', content : 'https://kmly267.github.io'},{
+      { hid: 'description', name: 'description', content: 'k0tkの活動ログ' },
+      {property : 'og:url', content : 'https://k0tk267.github.io'},{
         property : 'og:image',
         content :
-            'https://kmly267.github.io/profile.png'
+            'https://k0tk267.github.io/profile.png'
       },
       {property : 'og:image:alt', content : 'OGP image'},
-      {property : 'og:title', content : 'kmly267.github.io'},
+      {property : 'og:title', content : 'k0tk267.github.io'},
       {property : 'og:type', content : 'website'},
-      { hid: 'og:description', property: 'og:description', content: 'kmly267のlog' },
-      {property : 'og:site_name', content : 'kmly267.github.io'},
+      { hid: 'og:description', property: 'og:description', content: 'k0tk267のlog' },
+      {property : 'og:site_name', content : 'k0tk267.github.io'},
       {property : 'og:locale', content : 'ja_JP'},
       {name : 'twitter:card', content : 'summary'},
-      {name : 'twitter:site', content : '@kmly267'}
+      {name : 'twitter:site', content : '@k0tk267'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '${env.BASE_URL}favicon.png' },

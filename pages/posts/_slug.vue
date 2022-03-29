@@ -35,7 +35,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `https://kmly267.github.io/posts/${this.post.id}`
+          content: `https://k0tk267.github.io/posts/${this.post.id}`
         },
         {
           hid: 'og:title',
@@ -63,7 +63,7 @@ export default {
           name: 'twitter:card',
           content: 'summary'
         },
-        { hid: 'twitter:site', name: 'twitter:site', content: '@kmly267' },
+        { hid: 'twitter:site', name: 'twitter:site', content: '@k0tk267' },
         {
           hid: 'og:site_name',
           property: 'og:site_name',
