@@ -1,4 +1,6 @@
-# About me
+# This website is under construction.
+## 2022/04/07 ~ 
+<!-- # About me
 I am a third-year undergraduate student at Meiji University, majoring information and communication.  
 In addition, I plan to graduate early from my undergraduate degree and go to NAIST.
 
@@ -40,4 +42,4 @@ Scala, Ruby, Python, PHP, Java, HTML/CSS, JavaScript etc.
 ### Framework / Library
 Ruby on Rails, Servlet, Vue.js, TensorFlow, scikit-learn etc.
 ### Tools
-Tools : Git, Docker, Windows Server, macOS, Ubuntu etc.
+Tools : Git, Docker, Windows Server, macOS, Ubuntu etc. -->
