@@ -16,7 +16,7 @@ jobs:
         working-directory: ./src
         run: |
           yarn
-          yarn build
+          yarn generate
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
