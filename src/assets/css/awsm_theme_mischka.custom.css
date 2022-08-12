@@ -129,6 +129,11 @@ blockquote{
   padding-left:2.5em;
 }
 
+blockquote > p{
+  border-left: thick solid #db887b;
+  padding-left: 10px;
+}
+
 aside{
   margin:0.5em 0;
   font-style:italic;
