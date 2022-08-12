@@ -7,4 +7,4 @@ down:
 	docker-compose down
 
 enter:
-	docker-compose exec web sh
+	docker-compose exec app sh
