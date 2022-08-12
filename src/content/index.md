@@ -9,7 +9,7 @@ My name is Koki Otsuka. I am a master's student at Nara Institute of Science and
 
 ## Education
 - Nara Institute of Science and Technology (2022/04 ~ Present)
-  - Master's degree in Infomation and Communication (expected)
+  - Master's degree in Engineering (expected)
 - Meiji University (2019/04 ~ 2022/03)
   - Bachelor's degree in Infomation and Communication
   - Early Graduation (3 years)
@@ -20,11 +20,10 @@ My name is Koki Otsuka. I am a master's student at Nara Institute of Science and
   - Developed some Web Application to collect madical data.
   - Developed some library to analysis medical data.
 
-#### Self-employement (2021/09 ~ Present)
-- Backend Engineer
+#### LF Computing (2021/09 ~ Present)
+- Self-employement
   - Implemented Web application as a Backend Engineer.
-- Mentor
-  - Support to develop Web Application.
+  - Support to develop Web Application as a consultant.
 
 #### JAPAN USEWARE SYSTEM Co.,Ltd. (2020/09 ~ 2022/03)
 - Backend Engineer (Part-time Job)
