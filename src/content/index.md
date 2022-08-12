@@ -1,48 +1,65 @@
 # About me
-I am a second-year undergraduate student at Meiji University, majoring information and communication.
-I love writing code and studying something new especially computer science and biomedicine.
-
+<!-- 日本語のページは[こちら](/ja)   -->
+My name is Koki Otsuka. I am a master's student at Nara Institute of Science and Technology (NAIST), majoring information science. I love writing code and studying something new especially computer science.
 
 ## Interest
+- Medical Data Processing
 - Web Developing
-- Deep Learning
-- Medical Image Processing
+- Machine Learning
 
 ## Education
-### April 2019 - Present
-Bachelor’s degree, Department of Infomation and Communication, 
-Meiji University, Japan
+- Nara Institute of Science and Technology (2022/04 ~ Present)
+  - Master's degree in Infomation and Communication (expected)
+- Meiji University (2019/04 ~ 2022/03)
+  - Bachelor's degree in Infomation and Communication
+  - Early Graduation (3 years)
 
-## Work Experiences
-### October 2020 - Present
-Server-side Engineer (part time job).  
-Modification of medical database applications using Scala and Java.
+## Experiences
+#### Social Computing Lab. (2022/05 ~ Present)
+- Research Assistant
+  - Developed some Web Application to collect madical data.
+  - Developed some library to analysis medical data.
 
-### August 2020 - September 2020
-Resarcher (Internship)  
-Research on medical imaging using deep learning at NARA Institute of Science and Technology .
+#### Self-employement (2021/09 ~ Present)
+- Backend Engineer
+  - Implemented Web application as a Backend Engineer.
+- Mentor
+  - Support to develop Web Application.
 
-### April 2020 - Jun 2020
-AR Engineer (part time job).  
-Create LINE bot and AR application using Unity, C# and Google App Script.
+#### JAPAN USEWARE SYSTEM Co.,Ltd. (2020/09 ~ 2022/03)
+- Backend Engineer (Part-time Job)
+  - Web App
+    - Implemented a medical database application using Play Framework which is written in Java and Scala. Worked on a wide range of projects from front-end to back-end.
+  - Web Crawler
+    - Create a web crawling platform from scratch to collect medical information. Reduce collection time by about 2/3 compared to the first collection time used PyPy, Cython.
 
-### December 2019 - March 2020
-Server-side Engineer（part time job）.  
-Modification of CMS using PHP and Vue.js.  
+#### SoftRoid Co.,Ltd. (2021/07 ~ 2022/02)
+- Backend Engineer (Part-time Job)
+  - API
+    - Developed APIs using FastAPI. These APIs are a part of a machine learning pipeline or used by client side of web application.
+  - Database Design
+    - Designed database to allow for more efficient query execution and to handle more data with less load.
+  - IPA Mito Project
+    - Participated in a project that was adopted as one of the most Japanese authoritative Project called IPA Mito Advanced Project.
 
-## Other Experience
-### Web Speed Hackathon Online Vol.2
-Front-end performance tuning hackathon held by Cyber Agent.  
-I came in 11th out of about 70 people.
+#### DMM.com (2021/07, 1 month)
+- Data Analyst (Internship)
+  - Analyzed Big Data
+    - Using a large amount of customer data collected from the EC site, analyzed the purchasing behavior of customers and proposed sales measures using Amazon Athena, matplotlib seaborn and so on. This measure could expect to make a profit of about 2 million yen by identified the types of customers to be targeted, and making specific appeals.
 
-## Skills (Have used before at work)
-### Languages
-Scala, Ruby, Python, PHP, Java, HTML/CSS, JavaScript etc.
-### Framework / Library
-Ruby on Rails, Servlet, Vue.js, TensorFlow, scikit-learn etc.
-### Tools
-Tools : Git, Docker, Windows Server, macOS, Ubuntu etc.
-
-## Certificates
-### TOEIC
-740(Listening 365,Reading 375)
+## Skills
+#### Web Developing
+- Backend (FastAPI, Play Framework)
+- Frontend (Nuxt.js, Vue.js)
+- DB (Postgres)
+#### Machine learning
+- Image Data Processing (OpenCV)
+- Table Data Processing (Pandas)
+- Modeling (TensorFlow, Pytorch)
+#### DevOps
+- Basic knowledge of Linux (Ubuntu)
+- Git (GitHub), Docker (Docker Hub) and CI (GitHub Actions)
+- AWS, GCP
+#### Languages
+- Japanese (native)
+- English (business)
