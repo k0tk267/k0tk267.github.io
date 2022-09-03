@@ -44,7 +44,7 @@ My name is Koki Otsuka. I am a master's student at Nara Institute of Science and
 #### DMM.com (2021/07, 1 month)
 - Data Analyst (Internship)
   - Analyzed Big Data
-    - Using a large amount of customer data collected from the EC site, analyzed the purchasing behavior of customers and proposed sales measures using Amazon Athena, matplotlib seaborn and so on. This measure could expect to make a profit of about 2 million yen by identified the types of customers to be targeted, and making specific appeals.
+    - NDA
 
 ## Skills
 #### Web Developing
