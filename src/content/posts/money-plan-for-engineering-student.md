@@ -7,6 +7,9 @@ tags:
   - 金策
 ---
 
+
+![Cover](/images/posts/money-plan-for-engineering-student/cover.png)
+
 ## TL;DR
 - 個人事業主として開業するべし
 - 使えそうな控除を集めるべし
