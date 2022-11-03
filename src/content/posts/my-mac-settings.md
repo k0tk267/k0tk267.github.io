@@ -1,7 +1,7 @@
 ---
 title: "Macで最初に行う設定メモ"
 date: 2022-11-03
-layout: 'draft'
+layout: 'article'
 cover: /posts/my-mac-settings/cover.jpg
 id: my-mac-settings.md
 tags:
@@ -15,7 +15,7 @@ tags:
 基本的にWindowsをメインマシンとしていて、手持ちのMacはスペックが低めなのでヘビーなものはあまり入れないような方針にしている。
 
 ## 大まかな流れ
-順番に関しては特に気にせず書かれているが、iTermとHomebrewだけインストールに時間がかかる気がするので先に実行しておいた方がいいかもしれない。
+順番に関しては特に気にせず書かれているが、iTermとHomebrewの項目にに時間がかかる気がするので先に実行しておいた方がいいかもしれない（Xcodeが途中必要になり、これに時間がかかる）。
 1. とりあえず必要なソフトをダウンロード
     - ブラウザ
       - Firefox Developer Edition, Google Chrome, Brave
@@ -52,8 +52,8 @@ tags:
         - [名前](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git#setting-your-git-username-for-every-repository-on-your-computer)と[メール](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-in-git)の設定
         - [SSHの設定](#githubのssh接続設定)
       - [Homebrewのインストール](https://brew.sh/)
-
-      - Python関連
+        - 先にXcodeを入れておかないとコケるので要注意（加えてインストールするまでに時間がかかる）
+      - [Python関連](#pythonの環境構築)
         - pyenv, poetryの導入
       - Scala関連
         - sbtの導入
@@ -104,3 +104,19 @@ tags:
 
 ### Pythonの環境構築
 - pyenvの導入
+  - [Homebrew Formulae: pyenv](https://formulae.brew.sh/formula/pyenv)
+  - とりあえず`brew install pyenv`でインストール
+  - .zshrcに以下の記述を追加（デフォルトのzshを使っている想定）
+    ```
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init --path)"
+    eval "$(pyenv init -)"
+    ```
+  - `pyenv install X.X.X`でお好みのPythonのバージョンをダウンロード
+  - `pyenv global X.X.X`で使用するPythonのバージョンを固定
+- poetryの導入
+  - [公式ドキュメント](https://python-poetry.org/docs/)
+  - ドキュメントに反して`brew install poetry`で入れるのが恐らく正解
+    - とりあえず `curl -sSL https://install.python-poetry.org | python3 -`でインストールしようと思ったらコケた
+    - ちなみに有志が作って公開してある日本語版のドキュメントもあるが、翻訳が間に合っていなくて`get-poetry.py`を使ってダウンロードする記述のままなので見るべからず（もしくはPR投げてあげるといいかも）
