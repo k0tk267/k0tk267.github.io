@@ -10,6 +10,8 @@
     "nuxt": "3.0.0-rc.6"
   },
   "dependencies": {
-    "@nuxt/content": "npm:@nuxt/content-edge"
+    "@nuxt/content": "npm:@nuxt/content-edge",
+    "rehype-katex": "^6.0.2",
+    "remark-math": "^5.1.1"
   }
 }

@@ -8,5 +8,15 @@ export default defineNuxtConfig({
   ],
   css: [
     "@/assets/css/awsm_theme_mischka.custom.css"
-  ]
+  ],
+  content: {
+    markdown: {
+      remarkPlugins: [
+        'remark-math'
+      ],
+      rehypePlugins: [
+        'rehype-katex'
+      ]
+    }
+  }
 })
