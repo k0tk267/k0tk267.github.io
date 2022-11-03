@@ -728,3 +728,10 @@ noscript{
 ::selection{
   background:rgba(195, 65, 56, 0.25);
 }
+
+/* original */
+
+/* fix dupulicate */
+.katex-mathml{
+  display: none;
+}
