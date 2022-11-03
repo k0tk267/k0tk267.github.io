@@ -1,6 +1,7 @@
 ---
 title: "学生が103万の壁を超えるときのTips"
 date: 2022-03-29
+layout: 'draft'
 cover: /posts/money-plan-for-student/cover.jpg
 id: money-plan-for-student.md
 tags:

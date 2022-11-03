@@ -1,6 +1,7 @@
 ---
 title: "NAIST受験記（2021年第一回オンライン試験）"
 date: 2021-08-09
+layout: 'article'
 cover: /posts/naist-entrance-exam-2021/cover.jpg
 id: naist-entrance-exam-2021.md
 tags:

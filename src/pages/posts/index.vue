@@ -1,6 +1,19 @@
+<script setup lang="ts">
+  import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+  const query: QueryBuilderParams = {
+    path: '/posts',
+    where: {
+      layout: 'article'
+    },
+    sort: {
+      date: -1
+    }
+  }
+</script>
+
 <template>
   <main>
-    <ContentList path="/posts" v-slot="{ list }">
+    <ContentList :query="query" v-slot="{ list }">
       <div v-for="article in list" :key="article._path">
         <NuxtLink :to="article._path">
           <h3>{{ article.title }}</h3>
