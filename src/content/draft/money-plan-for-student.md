@@ -1,14 +1,11 @@
 ---
-title: "エンジニアリングで日銭を稼ぐ学生が考えるべき税金・その他金策について"
+title: "学生が103万の壁を超えるときのTips"
 date: 2022-03-29
-cover: /posts/naist-entrance-exam-2021/cover.jpg
-id: money-plan-for-engineering-student.md
+cover: /posts/money-plan-for-student/cover.jpg
+id: money-plan-for-student.md
 tags:
   - 金策
 ---
-
-
-![Cover](/images/posts/money-plan-for-engineering-student/cover.png)
 
 ## TL;DR
 - 個人事業主として開業するべし
