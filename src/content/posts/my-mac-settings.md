@@ -44,6 +44,7 @@ tags:
     - Finderの設定
       - [サイドバーに表示する項目を追加する（ルートディレクトリ等）](https://support.apple.com/en-ie/guide/mac-help/mchlp3011/12.0/mac/12.0)
       - `command + shift + .`で隠しフォルダを表示
+      - System Preferences > Dock & Menu Bar > Show recent applications in Dockのチェックを外す
     - [トラックパッドの設定](#トラックパッドの設定)
     - [Dockを下側から左側に表示させるように変更](https://support.apple.com/guide/mac-help/open-apps-from-the-dock-mh35859/mac)
     - [バッテリーの残量を％表示で出力](#バッテリーの残量を％表示で出力)
