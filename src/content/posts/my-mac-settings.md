@@ -40,11 +40,15 @@ tags:
     - ブラウザの設定
       - Dark Reader, Multi account container, Notion Web Clipperをインストール
       - 検索言語を英語にしておく（「いかがでしたか？」対策）
+      - [勝手にパスワードを保存しないようにしておく(Firefox)](https://support.mozilla.org/en-US/kb/password-manager-remember-delete-edit-logins#w_disable-the-firefox-password-management-feature)
+    - Finderの設定
+      - [サイドバーに表示する項目を追加する（ルートディレクトリ等）](https://support.apple.com/en-ie/guide/mac-help/mchlp3011/12.0/mac/12.0)
+      - `command + shift + .`で隠しフォルダを表示
     - [トラックパッドの設定](#トラックパッドの設定)
     - [Dockを下側から左側に表示させるように変更](https://support.apple.com/guide/mac-help/open-apps-from-the-dock-mh35859/mac)
     - [バッテリーの残量を％表示で出力](#バッテリーの残量を％表示で出力)
     - ターミナル周りの設定
-      - zplug入れるパターン
+      - [zplug入れるパターン](#zplugで改良する場合)
       - Oh My Zsh入れるパターン
       - [iTerm本体の設定](#iterm本体の設定)
     - 開発周り
@@ -58,17 +62,19 @@ tags:
       - Scala関連
         - sbtの導入
       - JavaScript関連
-        - yarn入れるが、まあ入れんでもいいか（使用頻度低）
+        - nとyarn入れるが、まあ入れなくてもいいか（使用頻度低）
       - Editor関連
+        - [`code`でVScodeが起動するようにする](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
+        - File > Auto Saveにチェックを入れる
         - VScodeのプラグイン関連
-          - Darcula Theme
-            - VScodeのテーマ設定、そろそろ青とオレンジベースのテーマに乗り換えたい
+          - Theme
+            - [MonokaiEasyForRetina Theme](https://marketplace.visualstudio.com/items?itemName=gerane.Theme-MonokaiEasyForRetina)か[Darcula Theme](https://marketplace.visualstudio.com/items?itemName=rokoroku.vscode-theme-darcula)が個人的に好み
           - EvilInspector
-            - 全角スペース可視化、拡張入れんでもできる気がする
+            - 全角スペース可視化、拡張入れなくてもできる気がする
           - GitLens
             - クソコードを書いた犯人を探す拡張、大体`You, 3 month ago`と書かれている
           - Indent-rainbow
-            - カッコのマッチングを可視化できる、多分これも拡張入れんでもできる気がする
+            - カッコのマッチングを可視化できる、多分これも拡張入れなくてもできる気がする
 
 ## 詳細な設定内容
 
@@ -120,3 +126,35 @@ tags:
   - ドキュメントに反して`brew install poetry`で入れるのが恐らく正解
     - とりあえず `curl -sSL https://install.python-poetry.org | python3 -`でインストールしようと思ったらコケた
     - ちなみに有志が作って公開してある日本語版のドキュメントもあるが、翻訳が間に合っていなくて`get-poetry.py`を使ってダウンロードする記述のままなので見るべからず（もしくはPR投げてあげるといいかも）
+
+### zplugで改良する場合
+- zplugの導入
+  - `brew install zplug`でインストール
+  - TODO: plugin周りの記載を追加
+- [starship](https://starship.rs/)の導入
+  - `brew install starship`でとりあえずインストール
+  - `.zshrc`に`eval "$(starship init zsh)"`の記述を追加
+  - NerdFontの追加
+    ```
+    # 全部loneすると容量が大きいので、特定のフォント（今回はCode New Roman）だけclone
+    git clone --filter=blob:none --sparse git@github.com:ryanoasis/nerd-fonts
+    cd nerd-fonts
+    git sparse-checkout add patched-fonts/CodeNewRoman
+    # インストール
+    ./install.sh CodeNewRoman
+    ```
+  - 使用するFontの設定
+    - Preferences > Profile > Text > Fontを `CodeNewRoman, Bold, 14`に設定
+  - ~/.config/starship.tomlに以下の内容を追加
+    ```
+    [python]
+    symbol = ":snake: "
+    pyenv_version_name = true
+
+    [time]
+    disabled = false
+    format = ':clock10:[\[ $time \]]($style) '
+    ```
+
+### Oh My Zshで改良する場合
+- TODO: 頑張って追記する（Windows側に書く書くかも）
