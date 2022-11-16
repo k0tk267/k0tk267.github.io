@@ -25,6 +25,11 @@ My name is Koki Otsuka. I am a master's student at Nara Institute of Science and
   - Implemented Web application as a Backend Engineer.
   - Support to develop Web Application as a consultant.
 
+#### Recruit Holdings Co., Ltd. (2022/10 ~ 2022/11)
+- Machine Learning Engineer (Part-time Job)
+  - Developed Recommendation Pipeline
+    - NDA
+
 #### JAPAN USEWARE SYSTEM Co.,Ltd. (2020/09 ~ 2022/03)
 - Backend Engineer (Part-time Job)
   - Web App
