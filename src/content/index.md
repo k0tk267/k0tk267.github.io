@@ -3,9 +3,8 @@
 My name is Koki Otsuka. I am a master's student at Nara Institute of Science and Technology (NAIST), majoring information science. I love writing code and studying something new especially computer science.
 
 ## Interest
-- Medical Data Processing
-- Web Developing
-- Machine Learning
+- ML and MLOps
+- Medical and Finance domain
 
 ## Education
 - Nara Institute of Science and Technology (2022/04 ~ Present)
@@ -26,8 +25,8 @@ My name is Koki Otsuka. I am a master's student at Nara Institute of Science and
   - Support to develop Web Application as a consultant.
 
 #### Recruit Holdings Co., Ltd. (2022/10 ~ 2022/11)
-- Machine Learning Engineer (Part-time Job)
-  - Developed Recommendation Pipeline
+- Data Engineer (Part-time Job)
+  - Developed Recommendation System Pipeline
     - NDA
 
 #### JAPAN USEWARE SYSTEM Co.,Ltd. (2020/09 ~ 2022/03)
