@@ -20,6 +20,7 @@ export default defineComponent({
       navItems: [
         { name: 'Home', link: '/'},
         { name: 'Blog', link: '/posts'},
+        { name: 'Memo', link: '/memo'},
         { name: 'Links', link: '/links'},
         { name: 'Contact', link: '/contact'},
       ]
