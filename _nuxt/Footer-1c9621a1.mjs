@@ -1,0 +1,1 @@
+import{z as e,o,k as t,A as n}from"./entry-ddc28920.mjs";const _={},c=n("p",null,"\xA9 2022 k0tk267",-1),r=[c];function s(a,l){return o(),t("footer",null,r)}var d=e(_,[["render",s]]);export{d as default};

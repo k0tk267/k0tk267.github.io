@@ -1,0 +1,1 @@
+import r from"./Header-794f8d1a.mjs";import _ from"./Footer-1c9621a1.mjs";import{z as c,o as s,k as a,C as o,A as m,J as d}from"./entry-ddc28920.mjs";const l={},f={class:"custom-body"};function p(e,u){const t=r,n=_;return s(),a("div",f,[o(t),m("main",null,[d(e.$slots,"default")]),o(n)])}var B=c(l,[["render",p]]);export{B as default};
