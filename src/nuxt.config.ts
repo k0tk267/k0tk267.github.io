@@ -18,5 +18,10 @@ export default defineNuxtConfig({
         'rehype-katex'
       ]
     }
+  },
+  head: {
+    link: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP'}
+    ]
   }
 })
