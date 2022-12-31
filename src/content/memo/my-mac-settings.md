@@ -1,7 +1,7 @@
 ---
 title: "Macで最初に行う設定メモ"
 date: 2022-11-03
-layout: 'article'
+layout: 'memo'
 cover: /posts/my-mac-settings/cover.jpg
 id: my-mac-settings.md
 tags:
