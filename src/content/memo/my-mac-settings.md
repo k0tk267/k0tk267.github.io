@@ -45,12 +45,14 @@ tags:
       - [サイドバーに表示する項目を追加する（ルートディレクトリ等）](https://support.apple.com/en-ie/guide/mac-help/mchlp3011/12.0/mac/12.0)
       - `command + shift + .`で隠しフォルダを表示
       - System Preferences > Dock & Menu Bar > Show recent applications in Dockのチェックを外す
+    - [Caps Lock を Controlに変更](https://support.apple.com/guide/mac-help/change-the-behavior-of-the-modifier-keys-mchlp1011/mac)
     - [トラックパッドの設定](#トラックパッドの設定)
     - [Dockを下側から左側に表示させるように変更](https://support.apple.com/guide/mac-help/open-apps-from-the-dock-mh35859/mac)
+      - ついでに非表示設定もしておく
     - [バッテリーの残量を％表示で出力](#バッテリーの残量を％表示で出力)
     - ターミナル周りの設定
       - [zplug入れるパターン](#zplugで改良する場合)
-      - Oh My Zsh入れるパターン
+      - [Oh My Zsh入れるパターン](#oh-my-zshで改良する場合)
       - [iTerm本体の設定](#iterm本体の設定)
     - 開発周り
       - Github関連
@@ -58,15 +60,19 @@ tags:
         - [SSHの設定](#githubのssh接続設定)
       - [Homebrewのインストール](https://brew.sh/)
         - 先にXcodeを入れておかないとコケるので要注意（加えてインストールするまでに時間がかかる）
+      - 開発用ディレクトリにシンボリックリンクを貼る
+        - 大体デスクトップにdevディレクトリを作りたがるが、手癖でホームディレクトリ直下にdevディレクトリがほしいため
+        - `ln -s ln -s /Users/<replace user name>/Desktop/dev /Users/<replace user name>`でOK
       - [Python関連](#pythonの環境構築)
         - pyenv, poetryの導入
-      - Scala関連
-        - sbtの導入
+      - [Scala関連](#scalaの環境構築)
+        - Javaとsbtの導入
       - JavaScript関連
         - nとyarn入れるが、まあ入れなくてもいいか（使用頻度低）
       - Editor関連
         - [`code`でVScodeが起動するようにする](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
         - File > Auto Saveにチェックを入れる
+        - View > Appearance > Render Whitespaceにチェックを入れる
         - VScodeのプラグイン関連
           - Theme
             - [MonokaiEasyForRetina Theme](https://marketplace.visualstudio.com/items?itemName=gerane.Theme-MonokaiEasyForRetina)か[Darcula Theme](https://marketplace.visualstudio.com/items?itemName=rokoroku.vscode-theme-darcula)が個人的に好み
@@ -76,6 +82,14 @@ tags:
             - クソコードを書いた犯人を探す拡張、大体`You, 3 month ago`と書かれている
           - Indent-rainbow
             - カッコのマッチングを可視化できる、多分これも拡張入れなくてもできる気がする
+          - Python
+            - とりあえず入れておけば、JupyterとかPylanceとか勝手に入れてくれて便利
+          - black
+            - PythonのFormatter
+          - metals
+            - ScalaのLanguage Server
+          - Remote Development
+            - これもとりあえず入れておけばSSHしたりDockerコンテナの中に入ったりするのに便利
 
 ## 詳細な設定内容
 
@@ -97,6 +111,9 @@ tags:
 ### iTerm本体の設定
 元々色々いじっていたが設定が思い出せない。  
 思い出し次第随時加筆予定。  
+- 無限にスクロールできるようにする
+  - Preferences > Profiles > Terminal > Unlimited scrollbackにチェックを入れる
+  - ログを無限に遡れる
 - 半透明
   - Preferences > Profiles > Window > Transparency を60に設定
 - 初期起動をフルスクリーン状態にする
@@ -128,6 +145,23 @@ tags:
     - とりあえず `curl -sSL https://install.python-poetry.org | python3 -`でインストールしようと思ったらコケた
     - ちなみに有志が作って公開してある日本語版のドキュメントもあるが、翻訳が間に合っていなくて`get-poetry.py`を使ってダウンロードする記述のままなので見るべからず（もしくはPR投げてあげるといいかも）
 
+### Scalaの環境構築
+- Javaの導入
+  - `brea install java11`でOK
+    - どのディストリビューションのJavaが入るのか知らないが、とりあえずJava11が入っていれば不都合はない
+  - なんか以下のコマンドを入力するように出力されるので、仰せのままに入力する（JDKとPATHの設定）
+    ```
+    # JDKのシンボリックリンクを張る
+    sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+    # JDKのパスを通す
+    echo 'export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"' >> ~/.zshrc
+    # よくわからんがコンパイラにJDKを認識させる設定な気がする
+    export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
+    ```
+  - `java --version`でなんか返ってくればOK
+- sbtの導入
+  - `brew install sbt`でOK
+
 ### zplugで改良する場合
 - zplugの導入
   - `brew install zplug`でインストール
@@ -158,4 +192,9 @@ tags:
     ```
 
 ### Oh My Zshで改良する場合
-- TODO: 頑張って追記する（Windows側に書く書くかも）
+- ohmyzshの導入
+  - [Basic Installation](https://github.com/ohmyzsh/ohmyzsh#basic-installation)にかかれているコマンドを愚直に入れる
+  - ohmyzshよりもPreztoのほうが軽量らしいが、特にこっちでも動作は重くないかつ、全部入りでなにか足りなくてコケるみたいない事が少なそうなのでこれを採用
+
+- powerlevel10kの導入
+  - powerlevel10kに[Oh My Zsh用の設定項目欄](https://github.com/romkatv/powerlevel10k#oh-my-zsh)があるので愚直に入れるだけ
