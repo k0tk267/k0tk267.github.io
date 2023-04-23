@@ -111,6 +111,8 @@ tags:
 ### iTerm本体の設定
 元々色々いじっていたが設定が思い出せない。  
 思い出し次第随時加筆予定。  
+- [Rosettaを使用して開く](https://support.apple.com/en-us/HT211861)
+  - これをしないとArm対応していないものがコケる
 - 無限にスクロールできるようにする
   - Preferences > Profiles > Terminal > Unlimited scrollbackにチェックを入れる
   - ログを無限に遡れる
