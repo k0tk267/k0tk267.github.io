@@ -72,6 +72,7 @@ tags:
       - Editor関連
         - [`code`でVScodeが起動するようにする](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
         - File > Auto Saveにチェックを入れる
+        - 80文字のラインを入れる (editor.rulers)
         - View > Appearance > Render Whitespaceにチェックを入れる
         - VScodeのプラグイン関連
           - Theme
