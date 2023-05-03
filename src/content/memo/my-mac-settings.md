@@ -128,6 +128,10 @@ tags:
   - Preferences > General > Window > Native full screen windows のチェックボックスを外す
   - Preferences > Keys > Hotkey > Show/hide all windows with a system-wide hotkeyでoption+spaceに設定
     - 「ctrl + Enter」か「Space + Enter」に設定している人が多いのでお好みで
+- 画面分割時にディレクトリを分割元のディレクトリと同じ状態にする
+  - Preferences > Profiles > General > Working Directory > Advanced Configuration > Reuse previous session's directoryにチェックを入れる
+- 起動時のディレクトリを変更
+  - Preferences > Profiles > General > Working Directory > Advanced Configuration > Working Directory for New Windowsでお好みにDirectoryを指定
 
 ### Pythonの環境構築
 - pyenvの導入
