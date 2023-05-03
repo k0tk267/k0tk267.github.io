@@ -41,6 +41,7 @@ tags:
       - Dark Reader, Multi account container, Notion Web Clipperをインストール
       - 検索言語を英語にしておく（「いかがでしたか？」対策）
       - [勝手にパスワードを保存しないようにしておく(Firefox)](https://support.mozilla.org/en-US/kb/password-manager-remember-delete-edit-logins#w_disable-the-firefox-password-management-feature)
+      - [ページのスクリーンショットを取れるようにしておく（Firefox）](https://support.mozilla.org/en-US/kb/take-screenshots-firefox)
     - Finderの設定
       - [サイドバーに表示する項目を追加する（ルートディレクトリ等）](https://support.apple.com/en-ie/guide/mac-help/mchlp3011/12.0/mac/12.0)
       - `command + shift + .`で隠しフォルダを表示
